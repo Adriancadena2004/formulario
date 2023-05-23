@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulario de contacto de Adrian David Cadena Bernal</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Formulario de contacto</h2>
+    <form action="#" method="post" class="custom-form">
+      <label class="form-label">Rellena los datos:</label>
+      <div class="form-group">
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name="name" placeholder="el vostre nom" required>
+      </div>
+      <div class="form-group">
+        <label for="surname">Apellido:</label>
+        <input type="text" id="surname" name="surname" required>
+      </div>
+      <div class="form-group">
+        <label for="age">Edad (16-64):</label>
+        <input type="number" id="age" name="age" min="16" max="64" required>
+      </div>
+      <div class="form-group">
+        <label for="minor">Menor o Mayor:</label>
+        <div>
+          <input type="radio" id="minor-menor" name="minor" value="Menor" checked>
+          <label for="minor-menor">Menor</label>
+        </div>
+        <div>
+          <input type="radio" id="minor-mayor" name="minor" value="Mayor">
+          <label for="minor-mayor">Mayor</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="entry-type">Desplegable tipo de entrada (Qué estudias):</label>
+        <select id="entry-type" name="entry-type">
+          <option value="Estudiante de Eso del puig castellar">Estudiante de Eso del Puig Castellar</option>
+          <option value="Estudiante de Bachillerato del Puig Castellar">Estudiante de Bachillerato del Puig Castellar</option>
+          <option value="Estudiante de Formacion Profesional del Puig Castellar">Estudiante de Formacion Profesional del Puig Castellar</option>
+          <option value="Otra opción de estudio">Otra opción de estudio</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Comprar">
+      </div>
+    </form>
+  </div>
+</body>
+</html>
